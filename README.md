@@ -74,7 +74,7 @@ Kavach is a state-of-the-art Know Your Customer (KYC) application designed to si
 - **Blockchain Integration:** Enhancing the security of the application by maintaining immutable records.
 - **Linking Bank Account:** Enhancing the user convenience and authenticity by integrating financial services within the same platform.
 ## Team Members
-- Aarchi Dholakia - [GitHub](https://github.com/Aarchi-Dholakia){:target="_blank" rel="noopener"} | [LinkedIn](www.linkedin.com/in/aarchi-dholakia-278774288){:target="_blank" rel="noopener"}
-- Vedant Patel - [GitHub](https://github.com/Vedantt-Patel){:target="_blank" rel="noopener"} | [LinkedIn](https://www.linkedin.com/in/vedant-patel-machine-learning/){:target="_blank" rel="noopener"}
-- Aarya Gopani - [GitHub](#){:target="_blank" rel="noopener"} | [LinkedIn](https://www.linkedin.com/in/aarya-gopani-99444a259/){:target="_blank" rel="noopener"}
-- Prit Shah - [GitHub](https://github.com/Prit5642){:target="_blank" rel="noopener"} | [LinkedIn](https://www.linkedin.com/in/prit-shah-b1b58a286/){:target="_blank" rel="noopener"}
+- Aarchi Dholakia - [GitHub](https://github.com/Aarchi-Dholakia) | [LinkedIn](www.linkedin.com/in/aarchi-dholakia-278774288)
+- Vedant Patel - [GitHub](https://github.com/Vedantt-Patel) | [LinkedIn](https://www.linkedin.com/in/vedant-patel-machine-learning/)
+- Aarya Gopani - [GitHub](#) | [LinkedIn](https://www.linkedin.com/in/aarya-gopani-99444a259/)
+- Prit Shah - [GitHub](https://github.com/Prit5642) | [LinkedIn](https://www.linkedin.com/in/prit-shah-b1b58a286/)
