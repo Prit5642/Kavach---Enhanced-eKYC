@@ -5,19 +5,6 @@ import axios from 'axios';
 import React, { useState } from 'react';
 
 const MyChatBot = () => {
-    // const genAI = new GoogleGenerativeAI("AIzaSyDffTcmmCQB4mP3gQPoYql5tHUv-CRvmW8");
-    // async function run(prompt, streamMessage) {
-    //     // For text-only input, use the gemini-pro model
-    //     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-
-    //     const result = await model.generateContentStream(prompt);
-    //     let text = '';
-    //     for await (const chunk of result.stream) {
-    //         const chunkText = chunk.text();
-    //         text += chunkText;
-    //     }
-    //     return text;
-    // }
     const [dynopt, setopt] = useState([]);
     async function run(prompt) {
         const data = { 'ques': prompt };
@@ -58,22 +45,9 @@ const MyChatBot = () => {
         notification: { disabled: true },
         fileattachment: { disabled: true }
     }
-
-    // const flow = {
-    //     start: {
-    //         message: "Hello, I am Kavach AI.",
-    //         path: "model_loop",
-    //     },
-    //     model_loop: {
-    //         message: async (params) => {
-    //             return await run(params.userInput, params.streamMessage);
-    //         },
-    //         path: "model_loop"
-    //     },
-    // }
     const flow = {
         start: {
-            message: "Hello, I am Kavach AI.",
+            message: "Hello 👋, I am Kavach AI, a personalised chatbot prepared to enhance your eKYC process and solve your queries regarding this initiative. Ask me anything!",
             path: "model_loop",
         },
         model_loop: {
@@ -87,14 +61,6 @@ const MyChatBot = () => {
             options: dynopt,
             path: "model_loop"
         }
-
-        // process_options: {
-        //     transition: { duration: 0 },
-        //     message: async (params) => {
-        //         return await run(params.userInput);
-        //     }
-        //     path: "model_loop"
-        // }
     }
 
     return (

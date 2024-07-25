@@ -14,8 +14,8 @@ import io
 import requests
 from tmp2 import Aadhar_OCR
 
-# pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
-pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files (x86)/Tesseract-OCR/tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
+# pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files (x86)/Tesseract-OCR/tesseract.exe'
 app = Flask(__name__)
 CORS(app)
 
@@ -116,7 +116,7 @@ def upload_PAN_file():
 
         node_response = requests.post('http://localhost:5000/api/v1/form/receivePAN', json=data_loaded, headers=headers)
         if node_response.status_code != 200:
-            print("PAN");
+            print("PAN")
             return jsonify({'error': 'Failed to send data to Node.js server'}), 500
 
         return jsonify(response), 200

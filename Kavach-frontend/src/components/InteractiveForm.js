@@ -1,10 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import countryList from 'react-select-country-list';
-import axios from 'axios';
 import { ClipLoader } from 'react-spinners';
 import { Checkmark } from 'react-checkmark';
-import { Link,useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function ProjectPlannerForm() {
 
@@ -73,7 +72,7 @@ function ProjectPlannerForm() {
         let age = today.getFullYear() - dob.getFullYear();
         const monthDifference = today.getMonth() - dob.getMonth();
         if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < dob.getDate())) {
-            age=age-1;
+            age = age - 1;
         }
 
         if (age < 18) {
@@ -88,7 +87,7 @@ function ProjectPlannerForm() {
         console.log(newErrors)
         setErrors(newErrors);
         return newErrors;
-    };    
+    };
 
     const validateForm2 = () => {
 
@@ -103,19 +102,19 @@ function ProjectPlannerForm() {
         console.log(newErrors)
         setErrors(newErrors);
         return newErrors;
-    };    
+    };
 
     const nextStep = () => {
-        let temp={};
-        if(step==1)
-            temp=validateForm1();
-        if(step==2)
-            temp=validateForm2();
-        if (Object.keys(temp).length>0) {
+        let temp = {};
+        if (step === 1)
+            temp = validateForm1();
+        if (step === 2)
+            temp = validateForm2();
+        if (Object.keys(temp).length > 0) {
             console.log("Yes");
             return;
         }
-        
+
         console.log(FormData.FullName)
         setErrors({});
         setStep(step + 1);
@@ -123,10 +122,6 @@ function ProjectPlannerForm() {
 
     const prevStep = () => {
         setStep(step - 1);
-    };
-
-    const redoStep = () => {
-        setStep(1);
     };
 
 
@@ -144,12 +139,12 @@ function ProjectPlannerForm() {
     const [success, setSuccess] = useState('');
     const navigate = useNavigate();
 
-    const handleAadharCheck = async(e) => {
+    const handleAadharCheck = async (e) => {
         if (!file) {
             alert('Please select a file first.');
             return;
         }
-    
+
         setButtonVis(false);
         setDocLoading(true);
 
@@ -161,10 +156,10 @@ function ProjectPlannerForm() {
     }
 
     const handleAadharVerify = async (e) => {
-    
+
         const data = new FormData();
         data.append('formData', formData.file);
-    
+
         const token = localStorage.getItem('token');
 
         try {
@@ -175,7 +170,7 @@ function ProjectPlannerForm() {
                 },
                 body: data,
             });
-    
+
             if (response.ok) {
                 const responseData = await response.json();
                 console.log('File uploaded successfully:', responseData);
@@ -189,29 +184,29 @@ function ProjectPlannerForm() {
             setDocVerify(false);
             throw new Error("Error in Aadhaar Verification");
         }
-    };    
+    };
 
-    const handlePanCheck = async(e) => {
+    const handlePanCheck = async (e) => {
         if (!PANfile) {
             alert('Please select a file first.');
             return;
         }
-    
+
         setPANButtonVis(false);
         setPANDocLoading(true);
 
         setTimeout(() => {
             setPANDocLoading(false);
         }, 2000);
-        
+
         setPANDocVerify(true);
     }
 
     const handlePANVerify = async (e) => {
-    
+
         const pandata = new FormData();
         pandata.append('formPANData', formData.PANfile);
-    
+
         const token = localStorage.getItem('token');
 
         try {
@@ -222,8 +217,8 @@ function ProjectPlannerForm() {
                 },
                 body: pandata,
             });
-    
-    
+
+
             if (response.ok) {
                 const responseData = await response.json();
                 console.log('File uploaded successfully:', responseData);
@@ -237,9 +232,9 @@ function ProjectPlannerForm() {
             setPANDocVerify(false);
             throw new Error("Error in PAN Verification");
         }
-    };    
+    };
 
-    const handleFormData = async(e) => {
+    const handleFormData = async (e) => {
         e.preventDefault();
         setErrors({}); // Clear previous errors
         setSuccess(''); // Clear previous success message
@@ -267,8 +262,7 @@ function ProjectPlannerForm() {
                 alert('Unauthorized. Please log in again.');
                 navigate('/login');
             }
-            else if(response.status === 400)
-            {
+            else if (response.status === 400) {
                 navigate('/alreadyapplied');
             }
             else {
@@ -287,7 +281,7 @@ function ProjectPlannerForm() {
     for (let i = 0; i < options.length; i++) {
         showopt.push(<option key={options[i].value} value={options[i].value}>{options[i].label}</option>)
     }
-    
+
     return (
         < div className="relative min-h-screen flex" style={{ backgroundColor: '#608CFE' }}>
             <div className="container max-w-screen-xl mx-auto my-auto relative flex flex-col w-4/5">
@@ -329,10 +323,10 @@ function ProjectPlannerForm() {
                                     onChange={handleChange}
                                 />
                                 {errors.FullName && (
-                                <div className="text-red-500 text-sm mt-1">
-                                    {errors.FullName}
-                                </div>
-                            )}
+                                    <div className="text-red-500 text-sm mt-1">
+                                        {errors.FullName}
+                                    </div>
+                                )}
                             </div>
 
                             {/* Father's Name */}
@@ -350,10 +344,10 @@ function ProjectPlannerForm() {
                                     onChange={handleChange}
                                 />
                                 {errors.FatherName && (
-                                <div className="text-red-500 text-sm mt-1">
-                                    {errors.FatherName}
-                                </div>
-                            )}
+                                    <div className="text-red-500 text-sm mt-1">
+                                        {errors.FatherName}
+                                    </div>
+                                )}
                             </div>
 
                             {/* Gender and Marital Status */}
@@ -398,10 +392,10 @@ function ProjectPlannerForm() {
                                                 <span className="ml-2 text-lg">Others</span>
                                             </label>
                                             {errors.Gender && (
-                                            <div className="text-red-500 text-sm mt-1">
-                                                {errors.Gender}
-                                            </div>
-                                        )}
+                                                <div className="text-red-500 text-sm mt-1">
+                                                    {errors.Gender}
+                                                </div>
+                                            )}
                                         </div>
                                     </div>
 
@@ -444,10 +438,10 @@ function ProjectPlannerForm() {
                                                 <span className="ml-2 text-lg">Prefer Not to Say</span>
                                             </label>
                                             {errors.MaritalS && (
-                                            <div className="text-red-500 text-sm mt-1">
-                                                {errors.MaritalS}
-                                            </div>
-                                        )}
+                                                <div className="text-red-500 text-sm mt-1">
+                                                    {errors.MaritalS}
+                                                </div>
+                                            )}
                                         </div>
                                     </div>
                                 </div>
@@ -550,10 +544,10 @@ function ProjectPlannerForm() {
                                             onChange={handleChange}
                                         />
                                         {errors.StreetAddress1 && (
-                                        <div className="text-red-500 text-sm mt-1">
-                                            {errors.StreetAddress1}
-                                        </div>
-                                    )}
+                                            <div className="text-red-500 text-sm mt-1">
+                                                {errors.StreetAddress1}
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
 
@@ -589,10 +583,10 @@ function ProjectPlannerForm() {
                                                 onChange={handleChange}
                                             />
                                             {errors.City && (
-                                            <div className="text-red-500 text-sm mt-1">
-                                                {errors.City}
-                                            </div>
-                                        )}
+                                                <div className="text-red-500 text-sm mt-1">
+                                                    {errors.City}
+                                                </div>
+                                            )}
                                         </div>
                                     </div>
 
@@ -611,10 +605,10 @@ function ProjectPlannerForm() {
                                                 onChange={handleChange}
                                             />
                                             {errors.State && (
-                                            <div className="text-red-500 text-sm mt-1">
-                                                {errors.State}
-                                            </div>
-                                        )}
+                                                <div className="text-red-500 text-sm mt-1">
+                                                    {errors.State}
+                                                </div>
+                                            )}
                                         </div>
                                     </div>
                                 </div>
@@ -634,10 +628,10 @@ function ProjectPlannerForm() {
                                                 onChange={handleChange}
                                             />
                                             {errors.Country && (
-                                            <div className="text-red-500 text-sm mt-1">
-                                                {errors.Country}
-                                            </div>
-                                        )}
+                                                <div className="text-red-500 text-sm mt-1">
+                                                    {errors.Country}
+                                                </div>
+                                            )}
                                         </div>
                                     </div>
 
@@ -656,10 +650,10 @@ function ProjectPlannerForm() {
                                                 onChange={handleChange}
                                             />
                                             {errors.Zip && (
-                                            <div className="text-red-500 text-sm mt-1">
-                                                {errors.Zip}
-                                            </div>
-                                        )}
+                                                <div className="text-red-500 text-sm mt-1">
+                                                    {errors.Zip}
+                                                </div>
+                                            )}
                                         </div>
                                     </div>
                                 </div>
@@ -706,10 +700,10 @@ function ProjectPlannerForm() {
                                         onChange={handleChange}
                                     />
                                     {errors.Pan && (
-                                    <div className="text-red-500 text-sm mt-1">
-                                        {errors.Pan}
-                                    </div>
-                                )}
+                                        <div className="text-red-500 text-sm mt-1">
+                                            {errors.Pan}
+                                        </div>
+                                    )}
                                 </div>
                             </div>
 

@@ -5,7 +5,7 @@ import mainPagePhoto from '../assets/intropage.png'
 import { Link } from 'react-router-dom';
 import Loading from './Loading';
 
-const text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem obcaecati quis, dignissimos minus sapiente explicabo animi atque. Repudiandae, eligendi!";
+const text = "Discover Kavach, the next-generation KYC application designed to make identity verification simple, secure, and efficient. With a seamless user experience and advanced AI technology, Kavach ensures a hassle-free KYC process, safeguarding your personal information every step of the way.";
 const buttonText = "Learn More";
 
 const Home = () => {
@@ -31,7 +31,7 @@ const Home = () => {
                             <img src={mainPagePhoto} alt="image-hero-desktop" className='hidden mt-[110px] lg:flex lg:order-2 lg:w-full lg:h-full overflow-auto' />
                             <div className='mb-[100px] lg:pt-[120px] lg:pr-32'>
                                 <div className=" flex flex-col items-center lg:items-start">
-                                    <h1 className="text-4xl font-bold text-black lg:text-6xl">Enhance Your <span className='cursor-pointer text-[#608CFE]'>eKYC</span> Process</h1>
+                                    <h1 className="text-4xl font-bold text-black lg:text-6xl">Enhance Your <br /><span className='cursor-pointer text-[#608CFE]'>eKYC</span> Process</h1>
                                     <p className=" text-center lg:text-start lg:pr-11 text-base lg:text-lg my-6 text-[hsl(0,0%,41%)] font-medium">
                                         {text}
                                     </p>

@@ -11,6 +11,8 @@ import ThankYou from './components/ThankYou';
 import ThankYouKYC from './components/ThankYouKYC';
 import Error404 from './components/Error404';
 import Applied from './components/Applied'
+import Features from './components/Features';
+import Team from './components/Team';
 
 
 const App = () => {
@@ -27,6 +29,8 @@ const App = () => {
           <Route path='/thanks' element={< ThankYou />} />
           <Route path='/thankskyc' element={< ThankYouKYC />} />
           <Route path='/alreadyapplied' element={< Applied />} />
+          <Route path='/features' element={<Features />} />
+          <Route path='/team' element={<Team />} />
           <Route path='*' element={<Error404 />} />
         </Routes>
       </Router>

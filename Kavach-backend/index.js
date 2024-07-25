@@ -14,7 +14,7 @@ const helmet = require('helmet');
 
 const app = express();
 app.set('view engine', 'ejs');
-app.set('views','./views');
+app.set('views', './views');
 
 // routes import
 const authRoutes = require('./routes/authRoutes');
@@ -26,14 +26,14 @@ const corsOptions = {
     credentials: true,
 }
 
-const upload = multer({dest: "uploads/"});
+const upload = multer({ dest: "uploads/" });
 
 app.use(express.json());
 app.use(morgan('dev'));
 app.use(cors(corsOptions));
 app.use(helmet());
 app.use(mangoSanitize());
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({ extended: false }));
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/form', formRoutes);
 
@@ -43,7 +43,7 @@ const port = process.env.PORT || 3000;
 const start = async () => {
     try {
         await connectDB(process.env.MONGO_URI);
-        app.listen(port, ()=>{
+        app.listen(port, () => {
             console.log(`Server started on port ${port}`);
         });
     } catch (error) {
