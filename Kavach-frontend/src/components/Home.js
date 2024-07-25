@@ -22,6 +22,7 @@ const Home = () => {
             {(loading) ? (
                 <Loading />
             ) : (
+
                 <div className='h-[100vh] font-epilogue bg-[hsl(0,0%,98%)]'>
                     <MyChatBot />
                     <div className='flex flex-col'>
