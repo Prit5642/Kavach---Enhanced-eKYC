@@ -67,6 +67,24 @@ Kavach is a state-of-the-art Know Your Customer (KYC) application designed to si
     - Tesseract: For OCR
     - Gemini LLM Model: For chatbot assistance 
 ## Screenshots/Demo
+![WhatsApp Image 2024-07-26 at 21 41 16_e7991930](https://github.com/user-attachments/assets/418e30f1-bc64-4707-8eb5-c7aec3fe7f1e)
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/8d385bef-dd91-475d-8a3e-280e6f8fce72">
+![WhatsApp Image 2024-07-26 at 21 42 24_dbaf644f](https://github.com/user-attachments/assets/395e4d0a-1c44-4ada-a726-aaf1d16537a8)
+![WhatsApp Image 2024-07-26 at 21 43 06_7cc923ae](https://github.com/user-attachments/assets/a81a311f-605f-41d0-bd97-e7e7712084c7)
+![WhatsApp Image 2024-07-26 at 21 43 23_37402502](https://github.com/user-attachments/assets/9bbc5035-a9b0-4998-9ff3-01393fb8a3e2)
+![WhatsApp Image 2024-07-26 at 21 43 40_dfdd6e72](https://github.com/user-attachments/assets/55127a78-d8e3-467f-9669-4ac69ddd44e6)
+![WhatsApp Image 2024-07-26 at 21 44 02_955e1639](https://github.com/user-attachments/assets/42408224-663b-4167-b385-63414219efa2)
+![WhatsApp Image 2024-07-26 at 21 44 29_466a6e87](https://github.com/user-attachments/assets/3b819651-0a19-4908-a0bc-d62366a6541a)
+![WhatsApp Image 2024-07-26 at 21 44 41_07e863ac](https://github.com/user-attachments/assets/fc25bd09-18ec-489e-a5ad-0733a2cc6fe8)
+![WhatsApp Image 2024-07-26 at 21 44 51_cdb54f47](https://github.com/user-attachments/assets/5991a38c-b586-43b8-94a2-684a6c1ce1c2)
+![WhatsApp Image 2024-07-26 at 21 45 20_378fdc86](https://github.com/user-attachments/assets/bf94b303-0302-4600-85c3-f91e3d955f91)
+![WhatsApp Image 2024-07-26 at 21 45 38_24b722bf](https://github.com/user-attachments/assets/1a062299-ad1d-4ed6-9e0e-ddfebbe062f9)
+![WhatsApp Image 2024-07-26 at 21 45 43_504bbf4c](https://github.com/user-attachments/assets/c71bc63a-7417-4a43-bf86-69527708067c)
+![WhatsApp Image 2024-07-26 at 21 45 56_e759359e](https://github.com/user-attachments/assets/cd2f4214-0523-4a74-8212-6814be36dff0)
+![WhatsApp Image 2024-07-26 at 21 46 06_cf2d7a93](https://github.com/user-attachments/assets/a1a5e34c-d410-4f81-91a3-341445623d92)
+![Uploading WhatsApp Image 2024-07-26 at 21.46.24_2db8e472.jpg…]()
+
+
 ## Future Work/Improvements
 
 - **Advanced Fraud Detection:** Implement anomaly detection algorithms
