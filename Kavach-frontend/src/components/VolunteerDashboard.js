@@ -22,7 +22,7 @@ const VolunteerDashboard = () => {
                             </p>
                         </div>
                         <div className='pb-2'>
-                            <img className='h-62 m-auto' src={forgotpwd} alt='Forgot Password' />
+                            <img className='h-[290px] m-auto' src={forgotpwd} alt='Forgot Password' />
                         </div>
 
                         <div className='w-100 text-center'>

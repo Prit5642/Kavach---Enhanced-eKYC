@@ -3,6 +3,7 @@ import Navigation from './Navigation'
 import aarchi from '../assets/aarchi.jpg'
 import prit from '../assets/prit.jpg'
 import vedant from '../assets/vedant.jpg'
+import aarya from '../assets/aarya.jpg'
 
 const Team = () => {
     return (
@@ -58,7 +59,7 @@ const Team = () => {
                         </div>
                         <div class="items-center bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition duration-300">
 
-                            <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+                            <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src={aarya} alt="Aarya Gopani" />
 
                             <div class="p-5">
                                 <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
