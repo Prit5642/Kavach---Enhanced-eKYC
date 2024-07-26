@@ -68,7 +68,6 @@ Kavach is a state-of-the-art Know Your Customer (KYC) application designed to si
     - Gemini LLM Model: For chatbot assistance 
 ## Screenshots/Demo
 ![WhatsApp Image 2024-07-26 at 21 41 16_e7991930](https://github.com/user-attachments/assets/418e30f1-bc64-4707-8eb5-c7aec3fe7f1e)
-<img width="960" alt="image" src="https://github.com/user-attachments/assets/8d385bef-dd91-475d-8a3e-280e6f8fce72">
 ![WhatsApp Image 2024-07-26 at 21 42 24_dbaf644f](https://github.com/user-attachments/assets/395e4d0a-1c44-4ada-a726-aaf1d16537a8)
 ![WhatsApp Image 2024-07-26 at 21 43 06_7cc923ae](https://github.com/user-attachments/assets/a81a311f-605f-41d0-bd97-e7e7712084c7)
 ![WhatsApp Image 2024-07-26 at 21 43 23_37402502](https://github.com/user-attachments/assets/9bbc5035-a9b0-4998-9ff3-01393fb8a3e2)
@@ -94,5 +93,5 @@ Kavach is a state-of-the-art Know Your Customer (KYC) application designed to si
 ## Team Members
 - Aarchi Dholakia - [GitHub](https://www.github.com/Aarchi-Dholakia) | [LinkedIn](https://www.linkedin.com/in/aarchi-dholakia-278774288)
 - Vedant Patel - [GitHub](https://www.github.com/Vedantt-Patel) | [LinkedIn](https://www.linkedin.com/in/vedant-patel-machine-learning/)
-- Aarya Gopani - [GitHub](#) | [LinkedIn](https://www.linkedin.com/in/aarya-gopani-99444a259/)
+- Aarya Gopani - [GitHub](https://github.com/aaryagopani) | [LinkedIn](https://www.linkedin.com/in/aarya-gopani-99444a259/)
 - Prit Shah - [GitHub](https://www.github.com/Prit5642) | [LinkedIn](https://www.linkedin.com/in/prit-shah-b1b58a286/)
